@@ -1,0 +1,97 @@
+:root {
+  --primary-strong-cyan: hsl(171, 66%, 44%);
+  --primary-light-blue: hsl(233, 100%, 69%);
+  --neutral-dark-grayish-blue: hsl(210, 10%, 33%);
+  --neutral-grayish-blue: hsl(201, 11%, 66%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 62.5%; // is 10px, so 1 rem = 10px
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  color: var(--neutral-dark-grayish-blue);
+}
+p {
+  color: var(--neutral-grayish-blue);
+  margin: 0 auto;
+}
+header {
+  background-image: url(../img/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__img {
+  padding-top: 122px;
+  padding-bottom: 72px;
+}
+.header__content {
+  padding: 0 15px;
+  & h1 {
+    font-size: 2rem;
+    padding-bottom: 25px;
+  }
+  & p {
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+    max-width: 650px;
+  }
+  &-btns {
+    & button {
+      display: block;
+      margin: 0 auto 25px auto;
+      border: none;
+      border-radius: 100px;
+      padding: 15px 40px;
+      width: 311px;
+      height: 55px;
+      font-size: 1rem;
+      color: whitesmoke;
+      cursor: pointer;
+      &:focus {
+        outline: 0;
+      }
+    }
+    &__ios {
+      background-color: var(--primary-strong-cyan);
+      box-shadow: 0px 2px 1px 1px rgba(18, 139, 121, 0.8);
+      &:active {
+        transform: translateY(5%);
+        box-shadow: 0px 1px 1px 1px rgba(18, 139, 121, 0.8);
+      }
+    }
+    &__mac {
+      background-color: var(--primary-light-blue);
+      box-shadow: 0px 2px 1px 1px rgba(60, 44, 153, 0.8);
+      &:active {
+        transform: translateY(5%);
+        box-shadow: 0px 1px 1px 1px rgba(60, 44, 153, 0.8);
+      }
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  header {
+    background-image: url(../img/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header__content {
+    &-btns {
+      & button {
+        display: inline-block;
+        margin: 0 8px;
+      }
+    }
+  }
+}

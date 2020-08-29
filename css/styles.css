@@ -179,6 +179,48 @@ main {
   padding: 20px 0 25px 0;
 }
 
+.brand {
+  padding: 130px 0 0 0;
+}
+
+.brand-img {
+  padding: 30px 0;
+}
+
+.button {
+  padding: 150px 0 150px 0;
+}
+
+.button h2 {
+  padding-bottom: 25px;
+}
+
+.button p {
+  width: 80%;
+  padding-bottom: 40px;
+}
+
+.footer {
+  background-color: #ebedf1;
+}
+
+.footer__sections img {
+  padding: 50px 0;
+}
+
+.footer__sections p {
+  padding: 15px 0;
+}
+
+.footer__sections-svg {
+  display: inline;
+  padding: 0 16px 0 16px;
+}
+
+.footer__sections-social {
+  padding: 50px 0;
+}
+
 @media (min-width: 950px) {
   header {
     background-image: url(../img/bg-header-desktop.png);
@@ -224,10 +266,38 @@ main {
   .access {
     padding-top: 75px;
   }
+  .workflow {
+    padding-bottom: 75px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   .workflow__tools {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 75px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__sections img {
+    width: 70%;
   }
 }
 

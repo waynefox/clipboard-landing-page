@@ -120,8 +120,8 @@ main {
   padding-top: 100px;
   &__heading {
     padding: 30px;
-    &h2 {
-    }
+    // & h2 {
+    // }
     & p {
       padding: 20px 0;
     }
@@ -139,9 +139,8 @@ main {
       padding: 20px 0;
     }
   }
-  &__tools {
-    //
-  }
+  // &__tools {
+  // }
   &__tools-box {
     width: 80%;
     max-width: 380px;
@@ -150,6 +149,40 @@ main {
     & h3 {
       padding: 20px 0 25px 0;
     }
+  }
+}
+.brand {
+  padding: 130px 0 0 0;
+  &-img {
+    padding: 30px 0;
+  }
+}
+.button {
+  padding: 150px 0 150px 0;
+  // &__heading {
+  // }
+  & h2 {
+    padding-bottom: 25px;
+  }
+  & p {
+    width: 80%;
+    padding-bottom: 40px;
+  }
+}
+.footer {
+  background-color: rgb(235, 237, 241);
+  &__sections img {
+    padding: 50px 0;
+  }
+  &__sections p {
+    padding: 15px 0;
+  }
+  &__sections-svg {
+    display: inline;
+    padding: 0 16px 0 16px;
+  }
+  &__sections-social {
+    padding: 50px 0;
   }
 }
 
@@ -203,8 +236,26 @@ main {
     padding-top: 75px;
   }
   .workflow {
+    padding-bottom: 75px;
+    max-width: 1500px;
+    margin: 0 auto;
     &__tools {
       display: flex;
+    }
+  }
+  .brand {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 75px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__sections img {
+      width: 70%;
     }
   }
 }
